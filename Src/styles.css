@@ -6,11 +6,19 @@ body {
     color: #DFDFDF;
     font-family: Tahoma;
     font-size: 16px;
+    background-image: url(../Assets/animalFlat.png);
   }
   
+  p {
+    text-align: start;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
   h1, p {
     margin: 1em auto; 
-    text-align: center;
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -48,6 +56,7 @@ body {
     width: 100%;
     min-height: 2em;
     border-radius:8px;
+    padding: 0 0 0 8px;
   }
   
   input, textarea {
@@ -71,4 +80,30 @@ body {
     background-color: #5F5980;
     border-color: #DFDFDF;
     min-width: 300px;
+  }
+
+  .language {
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .english, .spanish {
+    font-size: 16px;
+    text-decoration: none;
+    color: #DFDFDF; 
+    font-weight: 300;
+    margin: 0 8px;
+  }
+
+  .english:hover, .spanish:hover {
+    color: #fff;
+  }
+
+  .imgSvg {
+    padding: 0 8px;
+    width: 24px;
+    height: 24px;
   }

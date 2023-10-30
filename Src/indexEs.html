@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de Adopción">
+  <title>Formulario de Adopción</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="language">
+    <img class="imgSvg" src="../Assets/languageIcon.svg" />
+      <a class="english" href="./indexEn.html">EN</a>
+      <a class="spanish" href="./indexEs.html"><b>ES</b></a>
+  </div>
+  <h1 id="title">Formulario de Adopción</h1>
+  <p id="description">Tómate el tiempo que necesites! todas las respuestas son correctas, este formulario es solo para conocerte un poco mejor </p>
+  <form id="survey-form" method="post" action="">
+    <fieldset>
+      <label id="name-label">Nombre:
+        <input required id="name" name="name" type="text" placeholder="Introduce Tu Nombre">
+      </label>
+      <label id="email-label">Correo Electrónico:
+        <input required id="email" name="email" type="email" placeholder="Introduce Tu Correo Electrónico">
+      </label>
+      <label id="number-label">Introduce tu Edad (años):
+        <input required id="number" name="number" type="number" min="18" max="120" placeholder="Edad">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label id="dropdown-label">Como te enteraste de nosotros?
+        <select id="dropdown" name="dropdown">
+          <option value=""> (Selecciona uno) 
+          </option>
+          <option value="referrer1"> Amigos
+          </option>
+          <option value="referrer2"> Facebook
+          </option>
+          <option value="referrer3"> Instagram
+          </option>
+          <option value="referrer4"> Otro
+          </option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      Estoy interesado en adoptar (requerido)
+      <label id="adopt-cat-label">
+        <input id="adopt-cat" " class="inline" name="adopt" type="radio" value="5" checked> Gato(s)
+      </label>
+      <label id="adopt-dog-label">
+        <input id="adopt-dog" class="inline" name="adopt" type="radio" value="6"> Perro(s)
+      </label>
+    </fieldset>
+    <fieldset> Sé sincero y selecciona tantas opciones como requieras, esto nos ayudara a encontrarte a tu <b>futuro amigo ideal</b>!
+      <label id="have-a-pet-label">
+        <input id="have-a-pet" class="inline" name="have-a-pet" type="checkbox" value="7"> Tengo mascota(s) en casa
+      </label>
+      <label id="had-a-pet-label">
+        <input id="had-a-pet" class="inline" name="had-a-pet" type="checkbox" value="8"> He tenido mascota(s) <b>Antes</b>
+      </label>
+      <label id="dont-mind-age-label">
+        <input id="dont-mind-age" class="inline" name="dont-mind-age" type="checkbox" value="9"> No me importa su <b>Edad</b>
+      </label>
+      <label id="adopt-old-one-label">
+        <input id="adopt-old-one" class="inline" name="adopt-old-one" type="checkbox" value="10"> Quiero darle la oportunidad a un <b>Ancianito</b>
+      </label>
+      <label id="dont-mind-aspect-label">
+        <input id="dont-mind-aspect" class="inline" name="dont-mind-aspect" type="checkbox" value="11"> No me importa que <b>Aspecto</b> tenga
+      </label>
+      <label id="adopt-disabled-label">
+        <input id="adopt-disabled" class="inline" name="adopt-disabled" type="checkbox" value="12"> Me gustaría adoptar algun compañero con <b>Discapacidad</b>
+      </label>
+      <label id="kittens-puppies-label">
+        <input id="kittens-puppies" class="inline" name="kittens-puppies" type="checkbox" value="13"> Prefiero adoptar <b>Cachorros</b>
+      </label>
+    </fieldset>
+    <fieldset>Si pudieras escribir una carta para convencer a tu futuro Amigo peludo de ir contigo, qué le dirías?
+      <label id="letter-label">
+        <textarea id="letter" name="letter" rows="6" cols="30" placeholder="Hey Amigo! me encantaría decirte que... " ></textarea>
+      </label>
+    </fieldset>  
+    <input id="submit" type="submit" value="Enviar"/>
+  </form>
+</body>
+</html>
