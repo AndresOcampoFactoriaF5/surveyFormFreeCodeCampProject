@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopting Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Animal Shelter-Adopting Form</h1>
+  <p id="description">Feel free to take your time! Do not worry, any answer is correct, this form is just to know a bit more about you </p>
+  <form id="survey-form" method="post" action="">
+    <fieldset>
+      <label id="name-label">Name:
+        <input required id="name" name="name" type="text" placeholder="Enter Your Name">
+      </label>
+      <label id="email-label">Email:
+        <input required id="email" name="email" type="email" placeholder="Enter Your Email">
+      </label>
+      <label id="number-label">Imput Your Age (years):
+        <input required id="number" name="number" type="number" min="18" max="120" placeholder="Age">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label id="dropdown-label">How did you hear about us?
+        <select id="dropdown" name="dropdown">
+          <option value=""> (Select One) 
+          </option>
+          <option value="referrer1"> Friend
+          </option>
+          <option value="referrer2"> Facebook
+          </option>
+          <option value="referrer3"> Instagram
+          </option>
+          <option value="referrer4"> Other
+          </option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      I am willing to adopt (required)
+      <label id="adopt-cat-label">
+        <input id="adopt-cat" " class="inline" name="adopt" type="radio" value="5" checked> Cat(s)
+      </label>
+      <label id="adopt-dog-label">
+        <input id="adopt-dog" class="inline" name="adopt" type="radio" value="6"> Dog(s)
+      </label>
+    </fieldset>
+    <fieldset> Be honest and select as many options as you want, this will help us to match you with your perfect future Friend!
+      <label id="have-a-pet-label">
+        <input id="have-a-pet" class="inline" name="have-a-pet" type="checkbox" value="7"> I have a pet at home
+      </label>
+      <label id="had-a-pet-label">
+        <input id="had-a-pet" class="inline" name="had-a-pet" type="checkbox" value="8"> I have had pets <b>Before</b>
+      </label>
+      <label id="dont-mind-age-label">
+        <input id="dont-mind-age" class="inline" name="dont-mind-age" type="checkbox" value="9"> I dont mind about <b>its Age</b>
+      </label>
+      <label id="adopt-old-one-label">
+        <input id="adopt-old-one" class="inline" name="adopt-old-one" type="checkbox" value="10"> I want to adopt an <b>Old One</b>
+      </label>
+      <label id="dont-mind-aspect-label">
+        <input id="dont-mind-aspect" class="inline" name="dont-mind-aspect" type="checkbox" value="11"> I dont mind about <b>its Aspect</b>
+      </label>
+      <label id="adopt-disabled-label">
+        <input id="adopt-disabled" class="inline" name="adopt-disabled" type="checkbox" value="12"> I want to adopt a <b>Disabled</b> buddy
+      </label>
+      <label id="kittens-puppies-label">
+        <input id="kittens-puppies" class="inline" name="kittens-puppies" type="checkbox" value="13"> I prefer to adopt <b>Kittens</b>/<b>Puppies</b>
+      </label>
+    </fieldset>
+    <fieldset>If you could write a letter to convince to your future furry friend to go with you, what would you say?
+      <label id="letter-label">
+        <textarea id="letter" name="letter" rows="6" cols="30" placeholder="Hey buddy! I really want to let you know that... " ></textarea>
+      </label>
+    </fieldset>  
+    <input id="submit" type="submit" value="Submit"/>
+  </form>
+</body>
+</html>
