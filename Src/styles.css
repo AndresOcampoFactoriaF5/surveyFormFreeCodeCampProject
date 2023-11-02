@@ -11,9 +11,11 @@ body {
 .backgroundImageDiv {
   background-image: url(../Assets/animalFlat.png);
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   margin: 0;
+  padding: 0;
 }
 
 p {
@@ -41,7 +43,7 @@ form {
   min-width: 300px;
   margin: 0 auto;
   padding-bottom: 2em;
-  background-color: #2F3061;
+  background-color: #2f3061;
   border-radius: 8px;
 }
 
@@ -113,8 +115,6 @@ input[type="submit"]:hover {
   justify-content: flex-end;
   align-items: center;
   padding: 0 16px;
-  position: sticky;
-  top: 0;
 }
 
 .english,
@@ -129,7 +129,7 @@ input[type="submit"]:hover {
 .english:hover,
 .spanish:hover {
   color: #FFF;
-  scale: 1.3;
+  scale: 1.2;
 }
 
 .imgSvg {
